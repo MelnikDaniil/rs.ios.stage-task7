@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XIBViewController">
+            <connections>
+                <outlet property="RSSchoolLabel" destination="ZKB-cy-SoX" id="pbD-FI-J6S"/>
+                <outlet property="authorizeButton" destination="lNn-eO-0z3" id="Pqx-2l-diS"/>
+                <outlet property="loginTextField" destination="mW5-sQ-YpE" id="iqF-Ea-1GO"/>
+                <outlet property="passwordTextField" destination="VSZ-HV-ckg" id="gLJ-Pv-n2K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSchool" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKB-cy-SoX">
+                    <rect key="frame" x="101" y="80" width="162.5" height="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNn-eO-0z3">
+                    <rect key="frame" x="110" y="361" width="144.5" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="FUG-z0-BV9"/>
+                        <constraint firstAttribute="width" constant="156" id="TbI-Va-rfU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" title="Authorize"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSZ-HV-ckg">
+                    <rect key="frame" x="36" y="267" width="292.5" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mW5-sQ-YpE">
+                    <rect key="frame" x="36" y="203" width="292.5" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZKB-cy-SoX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="101" id="5B7-eX-5Nt"/>
+                <constraint firstItem="lNn-eO-0z3" firstAttribute="top" secondItem="VSZ-HV-ckg" secondAttribute="bottom" constant="60" id="9Qp-Xb-SC1"/>
+                <constraint firstItem="mW5-sQ-YpE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="36" id="9TG-2P-vYu"/>
+                <constraint firstItem="VSZ-HV-ckg" firstAttribute="top" secondItem="mW5-sQ-YpE" secondAttribute="bottom" constant="30" id="TTx-zg-Bf4"/>
+                <constraint firstItem="VSZ-HV-ckg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="36" id="W8K-Wj-Qkx"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="mW5-sQ-YpE" secondAttribute="trailing" constant="36" id="aE3-z1-h3m"/>
+                <constraint firstItem="ZKB-cy-SoX" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="cwd-Y4-Vcv"/>
+                <constraint firstItem="lNn-eO-0z3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="110" id="fm7-RB-yI9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="lNn-eO-0z3" secondAttribute="trailing" constant="110" id="lCi-Wh-EpX"/>
+                <constraint firstItem="mW5-sQ-YpE" firstAttribute="top" secondItem="ZKB-cy-SoX" secondAttribute="bottom" constant="80" id="mBC-mA-yej"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ZKB-cy-SoX" secondAttribute="trailing" constant="101" id="mBU-0Z-ePH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VSZ-HV-ckg" secondAttribute="trailing" constant="36" id="nja-qH-Ee2"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="47.226386806596707"/>
+        </view>
+    </objects>
+</document>
